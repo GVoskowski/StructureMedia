@@ -20,9 +20,9 @@ public class PlaylistActivity extends AppCompatActivity {
         view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PlaylistActivity.this,NowPlaying.class);
-                Bundle bundle= new Bundle();
-                bundle.putInt("j",1);
+                Intent i = new Intent(PlaylistActivity.this, NowPlaying.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("j", 1);
                 i.putExtras(bundle);
                 startActivity(i);
 
@@ -31,23 +31,23 @@ public class PlaylistActivity extends AppCompatActivity {
         view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PlaylistActivity.this,NowPlaying.class);
-                Bundle bundle= new Bundle();
-                bundle.putInt("j",2);
+                Intent i = new Intent(PlaylistActivity.this, NowPlaying.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("j", 2);
                 i.putExtras(bundle);
                 startActivity(i);
 
             }
         });
-view3.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent i = new Intent(PlaylistActivity.this,NowPlaying.class);
-        Bundle bundle= new Bundle();
-        bundle.putInt("j",3);
-        i.putExtras(bundle);
-        startActivity(i);
-    }
-});
+        view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(PlaylistActivity.this, NowPlaying.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("j", 3);
+                i.putExtras(bundle);
+                startActivity(i);
+            }
+        });
     }
 }

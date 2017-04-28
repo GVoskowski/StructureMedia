@@ -43,16 +43,13 @@ public class NowPlaying extends AppCompatActivity {
         toCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tc = new Intent(NowPlaying.this,PurchaseActivity.class);
-                Bundle bundle= new Bundle();
-                bundle.putInt("foo",foo);
+                Intent tc = new Intent(NowPlaying.this, PurchaseActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("foo", foo);
                 tc.putExtras(bundle);
                 startActivity(tc);
             }
         });
-
-
-
 
 
         playButton = (ImageButton) findViewById(R.id.play);
