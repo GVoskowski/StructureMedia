@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">StructureMedia</string>
+    <string name="now_playing_activity">Now Playing</string>
+    <string name="media_buttons">media_buttons</string>
+    <string name="placeholder">placeholder</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="bythesea">By the Sea</string>
+    <string name="nightsky">Night Sky</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="confirm">Confirm</string>
+    <string name="browse_available_playlists">Browse Available Playlists</string>
+    <string name="or_click_here_to_go_back">Or click here to go back</string>
+    <string name="purchase">Purchase</string>
+</resources>

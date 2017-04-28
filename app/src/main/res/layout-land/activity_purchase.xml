@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dildo.structuremedia.PurchaseActivity">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/purchase_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_20sp"
+        android:textColor="@color/colorAccent"/>
+
+
+    <ImageView
+        android:id="@+id/selected_playlist_image"
+        android:layout_below="@id/purchase_template"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/two_hund_dp"
+        tools:ignore="ContentDescription"/>
+
+
+
+    <TextView
+        android:id="@+id/playlist_name"
+        android:layout_below="@id/selected_playlist_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_16sp"
+        android:textColor="@color/colorAccent"
+        android:text="@string/nightsky"/>
+
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape2"
+        android:id="@+id/confirmation_button"
+        android:layout_width="@dimen/two_hund_dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:text="@string/confirm"
+        android:layout_below="@+id/playlist_name"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:textAllCaps="false"
+        android:layout_below="@id/confirmation_button"
+
+        android:paddingEnd="@dimen/pad8"
+        android:paddingStart="@dimen/pad8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/or_click_here_to_go_back"
+        android:textSize="12sp"
+        android:background="#00000000"
+        />
+
+</RelativeLayout>
+
+</ScrollView>
