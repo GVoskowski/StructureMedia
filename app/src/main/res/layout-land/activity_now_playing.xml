@@ -16,12 +16,6 @@
         android:src="@drawable/bytheseaf"
         tools:ignore="ContentDescription"/>
 
-    <ImageButton
-        style="@style/ToolBarButtons"
-        android:layout_marginStart="@dimen/pad8"
-        android:src="@drawable/ic_arrow_back_black_24dp"
-        tools:ignore="ContentDescription"/>
-
 
     <ImageButton
         android:id="@+id/shopping_cart"

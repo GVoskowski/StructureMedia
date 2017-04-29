@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +23,9 @@ public class NowPlaying extends AppCompatActivity {
         ImageView backscreen = (ImageView) findViewById(R.id.now_playing_image);
         TextView playing_playlist = (TextView) findViewById(R.id.now_playing_playlist);
         ImageButton toCart = (ImageButton) findViewById(R.id.shopping_cart);
+        ImageButton info = (ImageButton)findViewById(R.id.infor_button);
+        final Button skip = (Button)findViewById(R.id.skip_information);
+        final TextView infoText = (TextView)findViewById(R.id.now_playing_information);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -67,6 +71,23 @@ public class NowPlaying extends AppCompatActivity {
                     playButton.setImageResource(R.drawable.play_button);
                     playButton.setTag("playing");
                 }
+            }
+        });
+
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                infoText.setVisibility(View.VISIBLE);
+                skip.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                infoText.setVisibility(View.GONE);
+                skip.setVisibility(View.GONE);
             }
         });
     }

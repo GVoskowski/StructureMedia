@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
     tools:context="com.example.dildo.structuremedia.PurchaseActivity">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+
+        <ImageButton
+            style="@style/ToolBarButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_Back_button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_help_black_36dp"
+            tools:ignore="ContentDescription"
+            />
 
         <TextView
             android:id="@+id/purchase_template"
@@ -58,9 +67,9 @@
 
 
         <Button
+            android:id="@id/go_Back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_below="@id/confirmation_button"
             android:layout_centerHorizontal="true"
             android:background="#00000000"
@@ -71,6 +80,6 @@
             android:textSize="12sp"
             />
 
-    </RelativeLayout>
 
+    </RelativeLayout>
 </ScrollView>

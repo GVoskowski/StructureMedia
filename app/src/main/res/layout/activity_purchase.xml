@@ -4,64 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_vertical"
     tools:context="com.example.dildo.structuremedia.PurchaseActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/purchase_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_20sp"/>
+
+
+        <ImageView
+            android:id="@+id/selected_playlist_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_hund_dp"
+            android:layout_below="@id/purchase_template"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription"/>
+
+
+        <TextView
+            android:id="@+id/playlist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selected_playlist_image"
+            android:text="@string/nightsky"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_16sp"/>
+
+
+        <Button
+            android:id="@+id/confirmation_button"
+            android:layout_width="@dimen/two_hund_dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playlist_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@drawable/shape2"
+            android:text="@string/confirm"
+            android:textColor="@color/colorText"/>
+
+
+        <Button
+            android:id="@+id/go_Back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirmation_button"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:paddingEnd="@dimen/pad8"
+            android:paddingStart="@dimen/pad8"
+            android:text="@string/or_click_here_to_go_back"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            />
+
+        <ImageButton
+            android:id="@+id/inform_button"
+            style="@style/ToolBarButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_Back_button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_help_black_36dp"
+            tools:ignore="ContentDescription"
+            />
+    </RelativeLayout>
+
 
     <TextView
-        android:id="@+id/purchase_template"
+        android:id="@+id/purchase_information"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/purchase"
-        android:textAlignment="center"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/pad8"
+        android:paddingEnd="@dimen/pad8"
+        android:background="@color/colorText"
+        android:text="@string/purchase_info"
         android:textColor="@color/colorAccent"
-        android:textSize="@dimen/text_20sp"/>
-
-
-    <ImageView
-        android:id="@+id/selected_playlist_image"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/two_hund_dp"
-        android:layout_below="@id/purchase_template"
-        android:layout_centerHorizontal="true"
-        android:scaleType="centerInside"
-        tools:ignore="ContentDescription"/>
-
-
-    <TextView
-        android:id="@+id/playlist_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/selected_playlist_image"
-        android:text="@string/nightsky"
-        android:textAlignment="center"
-        android:textColor="@color/colorAccent"
-        android:textSize="@dimen/text_16sp"/>
-
+        android:textSize="@dimen/text_16sp"
+        android:visibility="gone"
+        />
 
     <Button
-        android:id="@+id/confirmation_button"
-        android:layout_width="@dimen/two_hund_dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/playlist_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dp16"
-        android:background="@drawable/shape2"
-        android:text="@string/confirm"
-        android:textColor="@color/colorText"/>
-
-
-    <Button
+        android:id="@+id/skip_information"
+        style="@drawable/shape2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/confirmation_button"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#00000000"
-        android:paddingEnd="@dimen/pad8"
-        android:paddingStart="@dimen/pad8"
-        android:text="@string/or_click_here_to_go_back"
+        android:layout_marginBottom="@dimen/dp12"
+        android:background="@drawable/shape2"
+        android:text="@string/skip"
         android:textAllCaps="false"
-        android:textSize="12sp"
+        android:textColor="@color/colorText"
+        android:visibility="gone"
         />
 
 

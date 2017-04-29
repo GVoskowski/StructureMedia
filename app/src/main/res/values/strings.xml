@@ -11,4 +11,12 @@
     <string name="browse_available_playlists">Browse Available Playlists</string>
     <string name="or_click_here_to_go_back">Or click here to go back</string>
     <string name="purchase">Purchase</string>
+
+    <string name="now_playing_info">\n\nAudio files are managed by MediaPlayer you can Play/Pause a file  or Skip Backward/Forward by pushing the suitable button.\nMediaPlayer takes the appropriate playlist that the user picked through The Available Playlists List and then starts the playback.
+        \n\nNote:
+        \nIdeally playlists are pre-created online and MediaPlayer requires Internet Access through the manifest in order to play them.
+        \nRequires that developer has previous experience with MediaPlayer class as well as providing access through the AndroidManifest. </string>
+
+    <string name="purchase_info">\n\nAudio files are managed by MediaPlayer you can Play/Pause a file  or Skip Backward/Forward by pushing the suitable button.\nMediaPlayer takes the appropriate playlist that the user picked through The Available Playlists List and then starts the playback.\n\nNote:\nIdeally playlists are pre-created online and MediaPlayer requires Internet Access through the manifest in order to play them.\nRequires that developer has previous experience with MediaPlayer class as well as providing access through the AndroidManifest. </string>
+    <string name="skip">Skip</string>
 </resources>
