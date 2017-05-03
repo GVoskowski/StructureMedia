@@ -17,6 +17,9 @@
         \nIdeally playlists are pre-created online and MediaPlayer requires Internet Access through the manifest in order to play them.
         \nRequires that developer has previous experience with MediaPlayer class as well as providing access through the AndroidManifest. </string>
 
-    <string name="purchase_info">\n\nAudio files are managed by MediaPlayer you can Play/Pause a file  or Skip Backward/Forward by pushing the suitable button.\nMediaPlayer takes the appropriate playlist that the user picked through The Available Playlists List and then starts the playback.\n\nNote:\nIdeally playlists are pre-created online and MediaPlayer requires Internet Access through the manifest in order to play them.\nRequires that developer has previous experience with MediaPlayer class as well as providing access through the AndroidManifest. </string>
+    <string name="purchase_info">\n\nIn this activity you are redirected when you hit the shopping_cart icon from the NowPlaying activity.\nIf you press the Confirm button,the purchase is then managed by Google Play’s In-app Billing service.
+
+\n\nNote:
+  \nDeveloper must have previous experience with Google Play Store/Google Play Console and Merchanting of digital products as well.Library that contains In-app Billing Version 3 API must be added. </string>
     <string name="skip">Skip</string>
 </resources>

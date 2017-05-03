@@ -28,7 +28,6 @@ public class PurchaseActivity extends AppCompatActivity {
         if (foo == 1) {
             selectedPlaylistImage.setImageResource(R.drawable.sunrisef);
             selectedPlaylistName.setText(R.string.sunrise);
-
         } else if (foo == 2) {
             selectedPlaylistImage.setImageResource(R.drawable.bytheseaf);
             selectedPlaylistName.setText(R.string.bythesea);
